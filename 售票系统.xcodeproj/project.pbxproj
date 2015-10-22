@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		529D11BB1BD7271700120B1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D11BA1BD7271700120B1B /* main.m */; };
+		529D11BE1BD7271700120B1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D11BD1BD7271700120B1B /* AppDelegate.m */; };
+		529D11C11BD7271700120B1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D11C01BD7271700120B1B /* ViewController.m */; };
+		529D11C41BD7271700120B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529D11C21BD7271700120B1B /* Main.storyboard */; };
+		529D11C61BD7271700120B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529D11C51BD7271700120B1B /* Assets.xcassets */; };
+		529D11C91BD7271700120B1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529D11C71BD7271700120B1B /* LaunchScreen.storyboard */; };
+		529D11D41BD7271700120B1B /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D11D31BD7271700120B1B /* ____Tests.m */; };
+		529D11DF1BD7271700120B1B /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D11DE1BD7271700120B1B /* ____UITests.m */; };
+		529D11EF1BD732D300120B1B /* poster_bg_1_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529D11EE1BD732D300120B1B /* poster_bg_1_small.jpg */; settings = {ASSET_TAGS = (); }; };
+		529D11F21BD73E0800120B1B /* BuyTiketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D11F11BD73E0800120B1B /* BuyTiketViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		529D11D01BD7271700120B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529D11AE1BD7271700120B1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529D11B51BD7271700120B1B;
+			remoteInfo = "售票系统";
+		};
+		529D11DB1BD7271700120B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529D11AE1BD7271700120B1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529D11B51BD7271700120B1B;
+			remoteInfo = "售票系统";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		529D11B61BD7271700120B1B /* 售票系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "售票系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		529D11BA1BD7271700120B1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		529D11BC1BD7271700120B1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		529D11BD1BD7271700120B1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		529D11BF1BD7271700120B1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		529D11C01BD7271700120B1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		529D11C31BD7271700120B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		529D11C51BD7271700120B1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		529D11C81BD7271700120B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		529D11CA1BD7271700120B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529D11CF1BD7271700120B1B /* 售票系统Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "售票系统Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		529D11D31BD7271700120B1B /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		529D11D51BD7271700120B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529D11DA1BD7271700120B1B /* 售票系统UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "售票系统UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		529D11DE1BD7271700120B1B /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		529D11E01BD7271700120B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529D11EE1BD732D300120B1B /* poster_bg_1_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = poster_bg_1_small.jpg; sourceTree = "<group>"; };
+		529D11F01BD73E0800120B1B /* BuyTiketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyTiketViewController.h; sourceTree = "<group>"; };
+		529D11F11BD73E0800120B1B /* BuyTiketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyTiketViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		529D11B31BD7271700120B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D11CC1BD7271700120B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D11D71BD7271700120B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		529D11AD1BD7271700120B1B = {
+			isa = PBXGroup;
+			children = (
+				529D11B81BD7271700120B1B /* 售票系统 */,
+				529D11D21BD7271700120B1B /* 售票系统Tests */,
+				529D11DD1BD7271700120B1B /* 售票系统UITests */,
+				529D11B71BD7271700120B1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		529D11B71BD7271700120B1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				529D11B61BD7271700120B1B /* 售票系统.app */,
+				529D11CF1BD7271700120B1B /* 售票系统Tests.xctest */,
+				529D11DA1BD7271700120B1B /* 售票系统UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		529D11B81BD7271700120B1B /* 售票系统 */ = {
+			isa = PBXGroup;
+			children = (
+				529D11F91BD7690800120B1B /* 退票 */,
+				529D11F81BD768FF00120B1B /* 改签 */,
+				529D11F71BD768F600120B1B /* 查看 */,
+				529D11F31BD73E0E00120B1B /* 购票 */,
+				529D11BC1BD7271700120B1B /* AppDelegate.h */,
+				529D11BD1BD7271700120B1B /* AppDelegate.m */,
+				529D11BF1BD7271700120B1B /* ViewController.h */,
+				529D11C01BD7271700120B1B /* ViewController.m */,
+				529D11C21BD7271700120B1B /* Main.storyboard */,
+				529D11C51BD7271700120B1B /* Assets.xcassets */,
+				529D11EE1BD732D300120B1B /* poster_bg_1_small.jpg */,
+				529D11C71BD7271700120B1B /* LaunchScreen.storyboard */,
+				529D11CA1BD7271700120B1B /* Info.plist */,
+				529D11B91BD7271700120B1B /* Supporting Files */,
+			);
+			path = "售票系统";
+			sourceTree = "<group>";
+		};
+		529D11B91BD7271700120B1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				529D11BA1BD7271700120B1B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		529D11D21BD7271700120B1B /* 售票系统Tests */ = {
+			isa = PBXGroup;
+			children = (
+				529D11D31BD7271700120B1B /* ____Tests.m */,
+				529D11D51BD7271700120B1B /* Info.plist */,
+			);
+			path = "售票系统Tests";
+			sourceTree = "<group>";
+		};
+		529D11DD1BD7271700120B1B /* 售票系统UITests */ = {
+			isa = PBXGroup;
+			children = (
+				529D11DE1BD7271700120B1B /* ____UITests.m */,
+				529D11E01BD7271700120B1B /* Info.plist */,
+			);
+			path = "售票系统UITests";
+			sourceTree = "<group>";
+		};
+		529D11F31BD73E0E00120B1B /* 购票 */ = {
+			isa = PBXGroup;
+			children = (
+				529D11F41BD73E2200120B1B /* control */,
+				529D11F51BD73E2A00120B1B /* view */,
+				529D11F61BD73E2F00120B1B /* model */,
+			);
+			name = "购票";
+			sourceTree = "<group>";
+		};
+		529D11F41BD73E2200120B1B /* control */ = {
+			isa = PBXGroup;
+			children = (
+				529D11F01BD73E0800120B1B /* BuyTiketViewController.h */,
+				529D11F11BD73E0800120B1B /* BuyTiketViewController.m */,
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		529D11F51BD73E2A00120B1B /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		529D11F61BD73E2F00120B1B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		529D11F71BD768F600120B1B /* 查看 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "查看";
+			sourceTree = "<group>";
+		};
+		529D11F81BD768FF00120B1B /* 改签 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "改签";
+			sourceTree = "<group>";
+		};
+		529D11F91BD7690800120B1B /* 退票 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "退票";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		529D11B51BD7271700120B1B /* 售票系统 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529D11E31BD7271700120B1B /* Build configuration list for PBXNativeTarget "售票系统" */;
+			buildPhases = (
+				529D11B21BD7271700120B1B /* Sources */,
+				529D11B31BD7271700120B1B /* Frameworks */,
+				529D11B41BD7271700120B1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "售票系统";
+			productName = "售票系统";
+			productReference = 529D11B61BD7271700120B1B /* 售票系统.app */;
+			productType = "com.apple.product-type.application";
+		};
+		529D11CE1BD7271700120B1B /* 售票系统Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529D11E61BD7271700120B1B /* Build configuration list for PBXNativeTarget "售票系统Tests" */;
+			buildPhases = (
+				529D11CB1BD7271700120B1B /* Sources */,
+				529D11CC1BD7271700120B1B /* Frameworks */,
+				529D11CD1BD7271700120B1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529D11D11BD7271700120B1B /* PBXTargetDependency */,
+			);
+			name = "售票系统Tests";
+			productName = "售票系统Tests";
+			productReference = 529D11CF1BD7271700120B1B /* 售票系统Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		529D11D91BD7271700120B1B /* 售票系统UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529D11E91BD7271700120B1B /* Build configuration list for PBXNativeTarget "售票系统UITests" */;
+			buildPhases = (
+				529D11D61BD7271700120B1B /* Sources */,
+				529D11D71BD7271700120B1B /* Frameworks */,
+				529D11D81BD7271700120B1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529D11DC1BD7271700120B1B /* PBXTargetDependency */,
+			);
+			name = "售票系统UITests";
+			productName = "售票系统UITests";
+			productReference = 529D11DA1BD7271700120B1B /* 售票系统UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		529D11AE1BD7271700120B1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = RenSihao;
+				TargetAttributes = {
+					529D11B51BD7271700120B1B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					529D11CE1BD7271700120B1B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 529D11B51BD7271700120B1B;
+					};
+					529D11D91BD7271700120B1B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 529D11B51BD7271700120B1B;
+					};
+				};
+			};
+			buildConfigurationList = 529D11B11BD7271700120B1B /* Build configuration list for PBXProject "售票系统" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 529D11AD1BD7271700120B1B;
+			productRefGroup = 529D11B71BD7271700120B1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				529D11B51BD7271700120B1B /* 售票系统 */,
+				529D11CE1BD7271700120B1B /* 售票系统Tests */,
+				529D11D91BD7271700120B1B /* 售票系统UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529D11B41BD7271700120B1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D11C91BD7271700120B1B /* LaunchScreen.storyboard in Resources */,
+				529D11EF1BD732D300120B1B /* poster_bg_1_small.jpg in Resources */,
+				529D11C61BD7271700120B1B /* Assets.xcassets in Resources */,
+				529D11C41BD7271700120B1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D11CD1BD7271700120B1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D11D81BD7271700120B1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529D11B21BD7271700120B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D11C11BD7271700120B1B /* ViewController.m in Sources */,
+				529D11BE1BD7271700120B1B /* AppDelegate.m in Sources */,
+				529D11BB1BD7271700120B1B /* main.m in Sources */,
+				529D11F21BD73E0800120B1B /* BuyTiketViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D11CB1BD7271700120B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D11D41BD7271700120B1B /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D11D61BD7271700120B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D11DF1BD7271700120B1B /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		529D11D11BD7271700120B1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529D11B51BD7271700120B1B /* 售票系统 */;
+			targetProxy = 529D11D01BD7271700120B1B /* PBXContainerItemProxy */;
+		};
+		529D11DC1BD7271700120B1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529D11B51BD7271700120B1B /* 售票系统 */;
+			targetProxy = 529D11DB1BD7271700120B1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		529D11C21BD7271700120B1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529D11C31BD7271700120B1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		529D11C71BD7271700120B1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529D11C81BD7271700120B1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		529D11E11BD7271700120B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		529D11E21BD7271700120B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		529D11E41BD7271700120B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "售票系统/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rensihao.com.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		529D11E51BD7271700120B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "售票系统/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rensihao.com.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		529D11E71BD7271700120B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "售票系统Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rensihao.com.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/售票系统.app/售票系统";
+			};
+			name = Debug;
+		};
+		529D11E81BD7271700120B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "售票系统Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rensihao.com.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/售票系统.app/售票系统";
+			};
+			name = Release;
+		};
+		529D11EA1BD7271700120B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "售票系统UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rensihao.com.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "售票系统";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		529D11EB1BD7271700120B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "售票系统UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rensihao.com.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "售票系统";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		529D11B11BD7271700120B1B /* Build configuration list for PBXProject "售票系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D11E11BD7271700120B1B /* Debug */,
+				529D11E21BD7271700120B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529D11E31BD7271700120B1B /* Build configuration list for PBXNativeTarget "售票系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D11E41BD7271700120B1B /* Debug */,
+				529D11E51BD7271700120B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		529D11E61BD7271700120B1B /* Build configuration list for PBXNativeTarget "售票系统Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D11E71BD7271700120B1B /* Debug */,
+				529D11E81BD7271700120B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		529D11E91BD7271700120B1B /* Build configuration list for PBXNativeTarget "售票系统UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D11EA1BD7271700120B1B /* Debug */,
+				529D11EB1BD7271700120B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 529D11AE1BD7271700120B1B /* Project object */;
+}
