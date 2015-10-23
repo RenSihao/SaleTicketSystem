@@ -77,7 +77,7 @@
 
     
     //把任务放在主队列（GCD自带的特殊串行队列）
-    //主队列 异步执行任务：任务放到主队列之后，会先把当前主线程中当前的任务执行完毕，再去执行主队列中的新任务
+    //主队列 异步执行任务：任务放到主队列之后，会先把当前主线程中当前的任务执行完毕，再去执行主队列中的新任务，不会创建新线程（特殊）
     //主队列 同步执行任务：会造成死锁
     [self mainQueue];
     
@@ -98,7 +98,7 @@
     
     //2、
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        //延时3秒，运行此处代码块
+        //延时3秒，异步运行此处代码块
         
     });
     
@@ -139,9 +139,90 @@
     });
     
     
+    //1 创建一个NSOperationQueue
+    NSOperationQueue *nsQueue = [[NSOperationQueue alloc] init];
     
+    for(int i=0; i<2; i++)
+    {
+        //2 创建一个NSOperation的子类对象
+        NSOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(invoca) object:nil];
+        //[operation start];
+        
+        //3 把NSOperation对象添加到NSOperationQueue
+        [nsQueue addOperation:operation];
+    }
     
+    //
+
+    NSOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
+        //
+            
+    }];
+    NSOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^{
+        //
+            
+    }];
+    [nsQueue addOperations:@[operation1, operation2] waitUntilFinished:NO];//主队列中是否等待参数设置为NO
+
     
+    //其它线程可以与主线程通信
+    [nsQueue addOperationWithBlock:^{
+        int a = 10;
+        NSLog(@"第一个任务 %@", [NSThread currentThread]);
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            
+            NSLog(@"主线程任务 %@ a=%d", [NSThread currentThread], a);
+        }];
+    }];
+    
+    //设置最大并发数
+    nsQueue.maxConcurrentOperationCount = 3;
+    for(int i=0; i<10; i++)
+    {
+        [nsQueue addOperationWithBlock:^{
+            //
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"%@, 当前任务编号 %d",[NSThread currentThread], i);
+        }];
+    }
+    
+    //依赖关系
+    
+    //登录操作
+    NSOperation *loginOP = [NSBlockOperation blockOperationWithBlock:^{
+        //
+        NSLog(@"%@ 登录操作", [NSThread currentThread]);
+    }];
+    
+    //下载操作
+    NSOperation *downloadOP = [NSBlockOperation blockOperationWithBlock:^{
+        //
+        NSLog(@"%@ 正在下载", [NSThread currentThread]);
+    }];
+    
+    //主UI线程 显示“下载完成”操作
+    NSOperation *showOP = [NSBlockOperation blockOperationWithBlock:^{
+        //
+        NSLog(@"%@ 下载完成", [NSThread currentThread]);
+    }];
+    
+    //依赖关系设置可以跨队列
+    //不要设置为循环依赖
+    //依赖关系设置要放在 操作加入队列之前
+    [downloadOP addDependency:loginOP];//下载依赖于登录
+    [showOP addDependency:downloadOP];//显示依赖于登录
+    
+    [[NSOperationQueue mainQueue] addOperation:showOP];
+    
+    [nsQueue addOperations:@[loginOP, downloadOP] waitUntilFinished:NO];
+    
+}
+
+//NSInvocationOperation start
+- (void)invoca
+{
+    NSLog(@"%s", __func__);
 }
 - (void)serial
 {
@@ -232,6 +313,8 @@
 - (void)mainQueue
 {
     dispatch_queue_t queue = dispatch_get_main_queue();
+    for(int i=0; i<2; i++)
+    {
         dispatch_sync(queue, ^{
             if(self.surplusTicket > 0)
             {
@@ -246,20 +329,7 @@
                 NSLog(@"当前%@ 线程购买失败,系统剩余票数为0", [NSThread currentThread]);
             }
         });
-        dispatch_sync(queue, ^{
-            if(self.surplusTicket > 0)
-            {
-                self.surplusTicket --;
-                
-                NSLog(@"当前%@ 线程成功购买到一张票", [NSThread currentThread]);
-                NSLog(@"系统剩余票数为%ld", self.surplusTicket);
-                //self.surplusLab.text = [NSString stringWithFormat:@"%ld张", self.surplusTicket];
-            }
-            else
-            {
-                NSLog(@"当前%@ 线程购买失败,系统剩余票数为0", [NSThread currentThread]);
-            }
-        });
+    }
 
 }
 - (void)delay
